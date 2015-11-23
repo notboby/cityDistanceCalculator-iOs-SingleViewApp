@@ -15,6 +15,7 @@
 		937D4D831C022FA600952F81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 937D4D811C022FA600952F81 /* LaunchScreen.storyboard */; };
 		937D4D8E1C022FA600952F81 /* peerReview4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 937D4D8D1C022FA600952F81 /* peerReview4Tests.m */; };
 		937D4D991C022FA600952F81 /* peerReview4UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 937D4D981C022FA600952F81 /* peerReview4UITests.m */; };
+		DAA8F7BB713BD0380898933F /* libPods-peerReview4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FACE3892CC18878E9F08AF /* libPods-peerReview4.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1511860F5A0F841F37709CD7 /* Pods-peerReview4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-peerReview4.release.xcconfig"; path = "Pods/Target Support Files/Pods-peerReview4/Pods-peerReview4.release.xcconfig"; sourceTree = "<group>"; };
+		27FACE3892CC18878E9F08AF /* libPods-peerReview4.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-peerReview4.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59179FC6D23DE8B235CE8061 /* Pods-peerReview4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-peerReview4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-peerReview4/Pods-peerReview4.debug.xcconfig"; sourceTree = "<group>"; };
 		937D4D701C022FA500952F81 /* peerReview4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = peerReview4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		937D4D741C022FA600952F81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		937D4D761C022FA600952F81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA8F7BB713BD0380898933F /* libPods-peerReview4.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1546199BCF6A386E78A9F986 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59179FC6D23DE8B235CE8061 /* Pods-peerReview4.debug.xcconfig */,
+				1511860F5A0F841F37709CD7 /* Pods-peerReview4.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		31AA281CF0D9BB3B940EC1B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27FACE3892CC18878E9F08AF /* libPods-peerReview4.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		937D4D671C022FA500952F81 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				937D4D8C1C022FA600952F81 /* peerReview4Tests */,
 				937D4D971C022FA600952F81 /* peerReview4UITests */,
 				937D4D711C022FA500952F81 /* Products */,
+				1546199BCF6A386E78A9F986 /* Pods */,
+				31AA281CF0D9BB3B940EC1B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 937D4D9D1C022FA600952F81 /* Build configuration list for PBXNativeTarget "peerReview4" */;
 			buildPhases = (
+				B3601F3EE5BDA76DC38451CC /* Check Pods Manifest.lock */,
 				937D4D6C1C022FA500952F81 /* Sources */,
 				937D4D6D1C022FA500952F81 /* Frameworks */,
 				937D4D6E1C022FA500952F81 /* Resources */,
+				88565F0018CCCB72BEE281EF /* Embed Pods Frameworks */,
+				EE89A1B6049A127D9D31FA00 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88565F0018CCCB72BEE281EF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-peerReview4/Pods-peerReview4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3601F3EE5BDA76DC38451CC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EE89A1B6049A127D9D31FA00 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-peerReview4/Pods-peerReview4-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		937D4D6C1C022FA500952F81 /* Sources */ = {
@@ -411,6 +486,7 @@
 		};
 		937D4D9E1C022FA600952F81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59179FC6D23DE8B235CE8061 /* Pods-peerReview4.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = peerReview4/Info.plist;
@@ -422,6 +498,7 @@
 		};
 		937D4D9F1C022FA600952F81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1511860F5A0F841F37709CD7 /* Pods-peerReview4.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = peerReview4/Info.plist;
@@ -498,6 +575,7 @@
 				937D4D9F1C022FA600952F81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		937D4DA01C022FA600952F81 /* Build configuration list for PBXNativeTarget "peerReview4Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +584,7 @@
 				937D4DA21C022FA600952F81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		937D4DA31C022FA600952F81 /* Build configuration list for PBXNativeTarget "peerReview4UITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +593,7 @@
 				937D4DA51C022FA600952F81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
